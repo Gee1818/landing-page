@@ -1,63 +1,112 @@
-*,
-*::after,
-*::before {
-  padding: 0;
-  margin: 0;
-}
-
-body{
-    font-family: 'Roboto', arial;
+body {
+    background: #1F2937;
+    color: #f9faf8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    color: #e5e7eb;
-    background: #1f2937;
-    margin-left: 50px;
-    margin-right: 50px;
+    border-color: red;
     display: flex;
     flex-direction: column;
+}
+.image{
+    height: 400px;
+    width: 400px;
+    background-color: salmon;
+    flex-shrink: 0;
+}
+
+.info-image{
+    height: 100px;
+    width: 100px;
+    background-color: salmon;
+    font-size: 48px;
 }
 
 header{
     display: flex;
-    width: 100%;
-    align-items: center;
     justify-content: space-between;
+    align-items: baseline;
 }
+
 .logo{
-    font-size: 24px;
-    color: #f9faf8;
-    margin-left: 12px;
+    font-size: 32px;
+    font-weight: bolder;
 }
+
 ul{
     margin: 0px;
+    padding: 0px;
     list-style: none;
+
     display: flex;
-    gap: 10px;
-    margin-right: 12px;
-    
+    gap: 5px;
 }
 
 a{
     text-decoration: none;
-    font-size: 18px;
-    color: #e5e7eb;
+    color: #f9faf8;
 }
 
 .intro{
     display: flex;
-    justify-content: space-around;
+    margin-top: 36px;
     align-items: center;
+    justify-content: space-between;
 }
-
 
 .awesome{
     font-size: 48px;
     font-weight: bolder;
+
+}
+.intro-container{
+    margin-right: 20px;
 }
 
-.image{
-    width: 400px;
-    height: 400px;
-    background: lightgray;
-    flex-shrink: 0;
+button{
+    background-color: #3882f6;
+    border-radius: 4px;
+    color: seashell;
+    font-weight: bold;
+    border-width: 0px;
+    padding: 5px;
+    margin-top: 20px;
+    width: 120px;
+
 }
 
+.info-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-title{
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 12px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+}
+
+.author{
+    align-self: flex-end;
+}
